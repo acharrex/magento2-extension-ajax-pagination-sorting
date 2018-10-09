@@ -2,11 +2,9 @@
 
 # Magento 2 AJAX Pagination and Sorting extension by [Shopigo](https://www.shopigo.ch)
 
-DESCRIPTION
+AJAX powered extension increasing your conversion rate by optimizing the page load time and reducing server load.
 
-BLOG LINK
-
-SCREENSHOT
+When a change is done from the toolbar, for example, when a customer selects a page number or changes the sort order of products, the page is automatically reloaded with AJAX.
 
 ## Requirements
 
@@ -17,9 +15,11 @@ Magento Open Source Edition 2.2.x.
 ## Method 1 - Installing via composer
 
 - Switch to your Magento project root
-- Run `composer require shopigo/magento2-extension-ajax-pagination-sorting=dev-master`
+- Run `composer require shopigo/magento2-extension-ajax-pagination-sorting`
 
 ## Method 2 - Installing using archive
+
+**Important**: this extension requires the [AJAX Listing extension by Shopigo](https://github.com/shopigo/magento2-extension-ajax-listing) (to install and enable)
 
 - Download [ZIP Archive](https://github.com/shopigo/magento2-extension-ajax-pagination-sorting/archive/master.zip)
 - Switch to your Magento project root
@@ -39,7 +39,32 @@ php bin/magento setup:static-content:deploy
 
 ## How to use it
 
-TODO
+- Log into your Magento back-office
+- Go to the menu "Stores > Configuration > Shopigo Extensions > AJAX Pagination and Sorting"
+- Set the parameter "Use AJAX to Load Product Listings" to "Yes"
+- Flush Magento caches from the menu "System > Tools > Cache Management"
+
+## Screenshots
+
+### Step 1 - Change the display mode
+
+![Step 1 - Select a filter](https://www.shopigo.ch/wp-content/uploads/2018/10/github-extension-ajax-pagination-sorting-plp-toolbar.jpg)
+
+### Step 2 - Products are loaded with AJAX
+
+![Step 2 - Products are loaded in AJAX](https://www.shopigo.ch/wp-content/uploads/2018/10/github-extension-ajax-pagination-sorting-plp-loading.jpg)
+
+### Step 3 - Results are shown without reloading the page
+
+![Step 3 - Results are shown without reloading the page](https://www.shopigo.ch/wp-content/uploads/2018/10/github-extension-ajax-pagination-sorting-plp-loaded.jpg)
+
+### When an error occurs with the AJAX request
+
+![When an error occurs with the AJAX request](https://www.shopigo.ch/wp-content/uploads/2018/10/github-extension-ajax-pagination-sorting-plp-loading-error.jpg)
+
+### Extension settings
+
+![Extension settings](https://www.shopigo.ch/wp-content/uploads/2018/10/github-extension-ajax-pagination-sorting-settings.jpg)
 
 ## Support
 
@@ -49,9 +74,14 @@ If you have any issues, open a bug report in GitHub's [issue tracker](https://gi
 
 Please contact us to get a quote https://www.shopigo.ch/contact
 
+## Change logs
+
+**Version 1.0.0** (2018-10-09)
+- First version
+
 ## License
 
 The code is licensed under [Open Software License ("OSL") v. 3.0](http://opensource.org/licenses/osl-3.0.php).
 
-Enjoy!<br/>
+<br/>Enjoy!<br/>
 [Shopigo](https://www.shopigo.ch)
